@@ -10,5 +10,11 @@ layout: base.njk
       <div class="love">
         💓
       </div>
+      
+      <ul>
+      {% for article in news.articles %}
+        <li><a href="{{ article.url }}"><h2>{{ article.title }}</h2></a><span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span></li>
+      {% endfor %}
+      </ul>
 </div>
 <script src="/js/vibe.js"></script>
