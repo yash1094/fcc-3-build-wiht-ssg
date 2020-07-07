@@ -9,5 +9,6 @@ module.exports = async function () {
     return response.data;
   } catch (error) {
     console.error(error);
+    //dummy test
   }
 };
